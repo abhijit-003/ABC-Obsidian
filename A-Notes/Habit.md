@@ -1,5 +1,0 @@
-```habittracker
-{
-  "path": "Habits"
-}
-```
