@@ -2,13 +2,13 @@
 
 - ![[Pasted image 20260407214247.png | 1000]]
 ## Memory
-#### RAM : Temporary memory
+#### RAM (Random Access Memory): Temporary memory
 - SRAM : STATIC RANDOM ACCESS MEMORY
 	- fast and expensive
 	- High speed application
 - DRAM : DYNAMIC RANDOM ACCESS MEMORY
 	- lower speed and cheap
-#### ROM: Store permanent data
+#### ROM (Read-Only Memory): Store permanent data
 - Firmware
 	- Defines how hardware devices communicate with each other
 - BIOS (Basic Input Output System):
@@ -16,6 +16,8 @@
 ## Storage
 #### HDD (Hard Disk Drives)
 - Introduced by IBM in 1956
+- Cheap
+- Slower than SSD
 #### SSD (Solid State Drives)
 - uses NAND-based flash memory (No moving parts),
 - provide faster data access
