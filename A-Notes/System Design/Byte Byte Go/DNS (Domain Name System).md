@@ -1,10 +1,10 @@
 DNS is a way to translate the human readable address (www.xyz.com) to Machine understandable IP address (129.23.4.5)
 #### DNS Resolver:
 - When browser sends the query to server it'll check for DNS Resolver
-- DNS Resolver is basically translate the Human readable address to machine understandable IP address
+- **DNS Resolver** is basically translate the Human readable address to machine understandable IP address
 - ![[Pasted image 20260407222304.png  | 1000]]
 
-- If the DNS server don't have address in the cache, then It'll ask it for authoritative nameserver
+- If the DNS server don't have address in the cache, then It'll ask it for **Authoritative Nameserver**
 - ![[Pasted image 20260407222607.png | 1000]]
 ---
 ## There are Three Levels of the Authoritative DNS servers
@@ -19,13 +19,13 @@ DNS is a way to translate the human readable address (www.xyz.com) to Machine un
 - ![[Pasted image 20260407223039.png | 700]]
 
 #### 2. TLD Nameservers (Top Level Domain):
-TLD stores the IP addresses of authoritative nameservers for all the domains under them.
+- TLD stores the IP addresses of authoritative nameservers for all the domains under them.
 
 #### 3. Authoritative Nameservers:
-AN for the domain provides answer to DNS queries
+- AN for the domain provides answer to DNS queries
 
-How does DNS work:
-![[Pasted image 20260407223708.png | 1000]]
+- How does DNS work:
+- ![[Pasted image 20260407223708.png | 1000]]
 
 ---
 #### TTL (Time To Live): Expiry Time of the Data
@@ -35,3 +35,4 @@ How does DNS work:
 	1. Reduce the TTL for the record that we want to change to something very short.
 
 ---
+Next --> [[Latency Numbers]]

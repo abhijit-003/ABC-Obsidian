@@ -1,6 +1,12 @@
-- Latency  is the time taken to complete the operation / Request 
+- Latency is the time taken to complete the operation / Request 
 - This usually measured in milliseconds (ms)
-- Good System Design = Minimizing high-latency operations
+- Good System Design = Minimizing high-latency operations 
+```
+1 second
+= 1,000 milliseconds
+= 1,000,000 microseconds
+= 1,000,000,000 nanoseconds
+```
 - ![[Pasted image 20260407230817.png | 1000]]
 ## Latency Numbers Range:
 ### 1. 1ns
@@ -8,10 +14,14 @@
 - Accessing CPU Registers is very fast 
 - but there are only few of them
 - CPU Clock cycle is also 1ns
+##### CPU:
+- **CPU Cycle:** the Timing / rhythm of the CPU
+- **CPU Registers**: tiny, extremely fast storage location inside the CPU
+- **Instruction:** Commands the CPU execute
 ##### CPU Registers:
 - This is the tiny, ultra-fast memory units inside the CPU which hold the data that the process is working right now
 - Register = CPU's working table
-- used for calculations, instructions and temporary data
+- Used for calculations, instructions and temporary data
 ---
 ### 2. 1-10ns
 - ![[Pasted image 20260407231458.png | 1000]]
@@ -37,16 +47,16 @@
 ### 4. 100-1000ns (1 microsecond)
 **System Call:** 
 - It is a way for a program (user space) to request service from the operating system (kernel space)
-- App can't directly access the hardware, so it asks the OS to do it -> that request = System call
+- App can't directly access the hardware, so it asks the **OS to do it -> that request = System call**
 - Making a simple System call in Linux takes hundreds nanoseconds
 ---
 ### 5. 1 - 10 Microsecond
 **Context Switch:** 
-- this is when CPU stops one process / thread and switches to another
+- This is when CPU stops one process / thread and switches to another
 - CPU is multitasking --> it keeps switching between tasks very fast
 - ![[Pasted image 20260407233125.png | 1000]]
 - Context Switching in Linux takes the few microsecond in best case.
-- while switching thread if it involves handling data it might take more time
+- While switching thread if it involves handling data it might take more time
 
 ### 6. 10 - 100 microseconds
 **Process a HTTP Request**
@@ -56,7 +66,7 @@
 - ![[Pasted image 20260407233619.png | 1000]]
 ---
 ### 7. 100 - 1000 microsecond (1 ms)
-SSD written latency is 10 times slower than SSD read latency
+- SSD written latency is 10 times slower than SSD read latency
 - ![[Pasted image 20260407234016.png | 1000]]
 - The typical Memcache/redis get operation takes about 1 ms
 - **Intra-zone Networking:** communication within the same availability zone (same data center area in cloud like AWS, Azure)
@@ -67,10 +77,14 @@ SSD written latency is 10 times slower than SSD read latency
 
 ### 10. 100-1000ms
 - It takes 300ms to decrypt the password
-- ![[Pasted image 20260415220754.png]]
-- ![[Pasted image 20260415220836.png]]
+- ![[Pasted image 20260415220754.png | 1000]]
+- ![[Pasted image 20260415220836.png | 1000]]
 - reading 1 GB from SSD takes 100-1000ms 
 
 ### 11. 1s
-- ![[Pasted image 20260415221042.png]]
+- ![[Pasted image 20260415221042.png | 1000]]\
 
+---
+Next -->  [[Data Structures]]
+
+---

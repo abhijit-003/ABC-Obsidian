@@ -39,3 +39,7 @@
 - Micro Card
 	
 
+---
+Next --> [[DNS (Domain Name System)]]
+
+---
