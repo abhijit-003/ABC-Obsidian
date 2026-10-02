@@ -192,6 +192,10 @@ Users
 * SQL queries
 * Transactions
 * ACID guarantees
+	* Atomicity: The series of operations considered and a single transaction
+	* Consistency : one valid state to another valid state.
+	* Isolation : Each transaction run independently without knowing about other transaction
+	* Durability : Data Remains even if the system fails
 * Complex joins
 
 ### Good Use Cases
